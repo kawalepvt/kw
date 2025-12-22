@@ -442,7 +442,7 @@
 </div>
 
 <div id="initialPage" class="page">
-    <img src="https://raw.githubusercontent.com/magawass/m/main/logo.png" alt="Kawale Pvt Secondary School Logo" class="logo">
+    <img src="https://raw.githubusercontent.com/kawalepvt/kw/main/logo.png" alt="Kawale Pvt Secondary School Logo" class="logo">
     <h1><p style="font-size:28px;">KAWALE PVT SEC SCHOOL</p></h1>
     <h2>EXAM PORTAL</h2>
     <label for="selectedForm">Select Class/Form</label>
@@ -454,7 +454,7 @@
       <option value="form4">Form 4</option>
     </select>
     <label for="studentNumberInput">Enter Exam Number</label>
-    <input type="text" id="studentNumberInput" placeholder="e.g. J047/001 or M047/001">
+    <input type="text" id="studentNumberInput" placeholder=" ">
     <label for="dobInput">Enter Date of Birth</label>
     <input type="date" id="dobInput">
 
@@ -464,14 +464,14 @@
     </div>
 
     <button onclick="openAdminLogin()">LOGIN</button>
-    <p style="font-size:11px; margin-top: 15px; color: #7f8c8d;">For Kawale Pvt Secondary School. Designed by Chiku Lubaini. All rights reserved.</p>
+    <p style="font-size:11px; margin-top: 15px; color: #7f8c8d;">For Kawale Pvt Secondary School. Designed by Chiku Lubaini(0 994 039 325). All rights reserved.</p>
 </div>
 
 <div id="briefReport" class="page">
     <button class="back-btn" onclick="handleBriefBack()" style="position: absolute; top: 10px; left: 10px; width: auto; padding: 5px 10px; max-width: none !important; margin: 0;">Back</button>
 
     <header id="briefReportHeader" style="width: 100%;">
-        <img src="https://raw.githubusercontent.com/magawass/m/main/logo.png" class="logo" alt="School Logo">
+        <img src="https://raw.githubusercontent.com/kawalepvt/kw/main/logo.png" class="logo" alt="School Logo">
         <div id="briefReportHeaderRight">
             <h3>KAWALE PVT SECONDARY SCHOOL</h3>
             Private Bag 189,<br>
@@ -520,7 +520,7 @@
     <button class="back-btn" onclick="handleProgressBack()" style="position: absolute; top: 10px; left: 10px; width: auto; padding: 5px 10px; max-width: none !important; margin: 0;">Back</button>
 
     <header id="reportHeader" style="width: 100%;">
-        <img src="https://raw.githubusercontent.com/magawass/m/main/logo.png" class="logo" alt="School Logo">
+        <img src="https://raw.githubusercontent.com/kawalepvt/kw/main/logo.png" class="logo" alt="School Logo">
         <div id="reportHeaderRight">
             <h3>KAWALE PVT SECONDARY SCHOOL</h3>
             Private Bag 189,<br>
@@ -716,7 +716,7 @@
             <option value="form4">Form 4</option>
         </select>
         <label for="progressExamNumber">Enter Exam Number</label>
-        <input type="text" id="progressExamNumber" placeholder="e.g. J047/001 or M047/001">
+        <input type="text" id="progressExamNumber" placeholder=" ">
         <button onclick="openStudentProgressSheet()" style="margin-top: 10px;">View Student Progress</button>
     </div>
 
@@ -806,21 +806,21 @@ const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/con
 // Grade boundary definitions
 const GRADE_KEY_LOWER = {
     A: 80,
-    B: 65,
-    C: 50,
-    D: 40,
-    E: 30,
+    B: 70,
+    C: 56,
+    D: 33,
+    E: 32,
     F: 0
 }; // Lower forms use A-F
 const GRADE_KEY_UPPER = {
-    1: 85,
-    2: 75,
-    3: 65,
-    4: 55,
-    5: 45,
-    6: 35,
-    7: 25,
-    8: 15,
+    1: 80,
+    2: 71,
+    3: 66,
+    4: 61,
+    5: 55,
+    6: 46,
+    7: 41,
+    8: 33,
     9: 0
 }; // Upper forms use 1-9 (Aggregate)
 
@@ -1460,7 +1460,7 @@ async function submitScore() {
 
     updateLoadingPercent(100);
     hideLoading();
-    alert(`Score for ${studentNumber} in ${subject} set to ${rawScore}. Click 'Save All Data to Repo' to permanently save changes.`);
+    alert(`Score for ${studentNumber} in ${subject} set to ${rawScore}. Click 'Save All Data' to permanently save changes.`);
 
     displayScoreSheet();
 }
@@ -1502,7 +1502,7 @@ async function deleteScore() {
 
     updateLoadingPercent(100);
     hideLoading();
-    alert(`Score for ${studentNumber} in ${subject} deleted (set to '-'). Click 'Save All Data to Repo' to permanently save changes.`);
+    alert(`Score for ${studentNumber} in ${subject} deleted (set to '-'). Click 'Save All Data' to permanently save changes.`);
 
     displayScoreSheet();
 }
@@ -1630,7 +1630,7 @@ function openAdminHome() {
 async function openUploadsAuth() {
     const token = document.getElementById('githubToken').value;
     if (!token) {
-        alert('You need to provide the GitHub Authorization Code to access this section.');
+        alert('You need Authorization Code to access this section.');
         return;
     }
     await initializeConfig(token);

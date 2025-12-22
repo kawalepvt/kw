@@ -1,1 +1,58 @@
-
+{
+  "term": 1,
+  "generalComment": "Uniform:   Girls   -   white blouse,   black skirt, black shoe.           Boys - white shirt,   black pair of trousers,   Both  - black shoes and  jersey(optional)                                                                \nNext Term opens on 5th January 2026",
+  "teachers": {
+    "form1": {
+      "Agriculture": "Banda",
+      "Bible Knowledge": "Mr Jere",
+      "Biology": "Mr Lubaini C",
+      "Chemistry": "Mrs Masepa",
+      "Chichewa": "Mrs Masoambeta",
+      "English": "Mr Kamtiki",
+      "Geography": "Mrs Henderson",
+      "History": "Mr Herbert",
+      "Mathematics": "Mr Master",
+      "Physics": "Mrs Nkhweza",
+      "Social/Life": "Mrs Namfuko"
+    },
+    "form2": {
+      "Agriculture": "LUBAINI  C",
+      "Bible Knowledge": "Jere",
+      "Biology": "Kalulu",
+      "Chemistry": "Kalemberera",
+      "Chichewa": "Masoambeta",
+      "English": "Thom",
+      "Geography": "Pandakwao",
+      "History": "Herbert",
+      "Mathematics": "Daimon",
+      "Physics": "Mkhweza",
+      "Social/Life": "Namfuko"
+    },
+    "form3": {
+      "Agriculture": "Mr Chilikutali",
+      "Bible Knowledge": "Mrs Chirwa",
+      "Biology": "Chilikutali",
+      "Chemistry": "Mrs Masepa",
+      "Chichewa": "Mrs Chapita",
+      "English": "Mrs Thom",
+      "Geography": "Mrs Henderson",
+      "History": "Mr Herbert",
+      "Mathematics": "Mr Master",
+      "Physics": "Mrs Nkhweza",
+      "Social/Life": "Mrs Namfuko"
+    },
+    "form4": {
+      "Agriculture": "Kasiyagoli",
+      "Bible Knowledge": "Chirwa",
+      "Biology": "Chilikutali",
+      "Chemistry": "Masepa",
+      "Chichewa": "Chapita",
+      "English": "Phiri",
+      "Geography": "Pandakwao",
+      "History": "Mthunzi",
+      "Mathematics": "Master",
+      "Physics": "Mkhweza",
+      "Social/Life": "Namfuko"
+    }
+  }
+}
